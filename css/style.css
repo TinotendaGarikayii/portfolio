@@ -55,14 +55,23 @@ table {
 * {
   overflow-x: hidden;
 }
+* a {
+  text-decoration: none;
+}
 
 .pc-nav {
   display: none;
 }
-.pc-nav .dark {
-  height: 40px;
-  width: 40px;
-  margin-left: 100px;
+
+.active .pc-nav {
+  display: block !important;
+}
+.active .pc-nav ul {
+  gap: 2rem;
+}
+.active .mode {
+  height: 0;
+  width: 0;
 }
 
 .mobile-nav {
@@ -95,7 +104,6 @@ table {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding-top: 5rem;
 }
 .banner .container .row .left h2 {
   width: 100%;
@@ -105,13 +113,7 @@ table {
   font-family: Georgia, "Times New Roman", Times, serif;
   width: 100%;
 }
-.banner .container .row .left .btn {
-  height: -moz-fit-content;
-  height: fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.banner .container .row .left .btn button {
+.banner .container .row .left button {
   background: black;
   color: white;
   border: none;
@@ -119,12 +121,23 @@ table {
   margin: 0;
   width: 7rem;
 }
+.banner .container .row .left button a {
+  text-decoration: none;
+  color: white;
+}
 .banner .container .row .right .image {
   margin-top: 20px;
 }
+.banner .container .row .right .icons {
+  display: flex;
+}
+.banner .container .row .right .icons img {
+  width: 120px;
+  height: 120px;
+}
 
 .about {
-  margin: 5rem;
+  margin: 1rem;
 }
 .about .container {
   display: flex;
@@ -132,15 +145,16 @@ table {
   justify-content: center;
   text-align: center;
 }
+.about .container .text .small-text {
+  font-weight: 300;
+}
 .about .container .text .min-text {
-  width: 70%;
-  margin-left: 10rem;
+  width: 100%;
 }
 .about .container .text .card {
   background: black;
-  padding: 2rem;
-  width: 70%;
-  margin-left: 10rem;
+  height: 100%;
+  width: 100%;
 }
 .about .container .text .card .container .row {
   color: #fff;
@@ -208,14 +222,13 @@ table {
 }
 
 .services {
-  margin: 5rem;
+  margin: 1rem;
 }
 .services .container .row .left .large-text h3 {
   font-weight: bolder;
-  width: 30%;
 }
 .services .container .row .left .med-text p {
-  width: 80%;
+  width: 100%;
 }
 .services .container .row .left .circle-container {
   padding-top: 5rem;
@@ -259,6 +272,187 @@ table {
   margin-top: 10px;
 }
 
+.projects {
+  margin-top: 2rem;
+}
+.projects .container .row .left h3 {
+  font-weight: bolder;
+}
+.projects .container .row .left .line {
+  background: black;
+  height: 1%;
+  margin-top: 2rem;
+}
+.projects .container .row .left h4 {
+  font-style: italic;
+  font-weight: 200;
+  padding-top: 1rem;
+}
+.projects .container .row .left p {
+  font-weight: 200;
+}
+.projects .container .row .left button {
+  background: black;
+  color: white;
+  border: none;
+}
+.projects .container .row .left button a {
+  text-decoration: none;
+  color: white;
+}
+.projects .container .row .center .line {
+  background: black;
+  height: 1%;
+  margin-top: 2rem;
+}
+.projects .container .row .center h4 {
+  font-style: italic;
+  font-weight: 200;
+  padding-top: 1rem;
+}
+.projects .container .row .center p {
+  font-weight: 200;
+}
+.projects .container .row .center button {
+  background: black;
+  color: white;
+  border: none;
+}
+.projects .container .row .center button a {
+  text-decoration: none;
+  color: white;
+}
+.projects .container .row .end .line {
+  background: black;
+  height: 1%;
+  margin-top: 1rem;
+}
+.projects .container .row .end h4 {
+  font-style: italic;
+  font-weight: 200;
+  padding-top: 1rem;
+}
+.projects .container .row .end p {
+  font-weight: 200;
+}
+.projects .container .row .end button {
+  background: black;
+  color: white;
+  border: none;
+}
+.projects .container .row .end button a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact {
+  margin: 2rem;
+}
+.contact .container h3 {
+  font-weight: bold;
+}
+.contact .container h3 span {
+  text-decoration: underline;
+}
+.contact .container .card {
+  background: black;
+  padding: 2rem;
+  width: 100%;
+}
+.contact .container .card .feature {
+  display: flex;
+  justify-content: center;
+}
+.contact .container .card .feature .julie-pic {
+  border-radius: 50%;
+  border: 2px solid white;
+  width: 100px;
+}
+.contact .container .card .feature img {
+  height: 40px;
+  width: 40px;
+}
+.contact .container .card .feature p {
+  color: white;
+  font-size: smaller;
+}
+.contact .container .card .feature .calling {
+  flex-direction: column;
+  gap: 0px;
+}
+.contact .container .card .book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .container .card .book img {
+  width: 30px;
+  height: 30px;
+}
+.contact .container .card .container {
+  margin: 2rem;
+}
+.contact .container .card .container .row .left img {
+  width: 40vw;
+  height: 20vh;
+}
+.contact .container .card .right form {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.contact .container .card .right label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+.contact .container .card .right input[type=text],
+.contact .container .card .right input[type=email] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+.contact .container .card .right textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+.contact .container .card .right button {
+  background-color: gray;
+  padding: 5px;
+  color: white;
+}
+.contact .container .card .right button a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  padding: 2rem;
+  background: black;
+  height: 20vh;
+}
+.footer .container .finale {
+  display: flex;
+  justify-content: baseline;
+  align-items: last baseline;
+  text-align: end;
+}
+.footer .container .finale p {
+  color: white;
+  gap: 5px;
+  padding-right: 3rem;
+}
+.footer .container .finale img {
+  height: 50px;
+  width: 50px;
+}
+.footer .container .finale .gram {
+  display: flex;
+  gap: 5px;
+}
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
@@ -296,10 +490,14 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     display: flex;
     color: black;
     gap: 50px;
+    text-decoration: none;
   }
   .pc-nav .flex-container ul li {
     color: black;
     font-size: 20px;
+  }
+  .pc-nav .flex-container ul li a {
+    text-decoration: none;
   }
   .banner .container .row .left {
     padding-top: 5rem;
@@ -325,6 +523,300 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
   .banner .container .row .right .icons {
     display: flex;
+  }
+  .about {
+    margin: 5rem;
+  }
+  .about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .about .container .text .min-text {
+    width: 70%;
+    margin-left: 10rem;
+  }
+  .about .container .text .card {
+    background: black;
+    padding: 2rem;
+    width: 70%;
+    margin-left: 10rem;
+  }
+  .about .container .text .card .container .row {
+    color: #fff;
+  }
+  .about .container .text .card .container .row .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+    font-size: smaller;
+    font-weight: 200;
+    width: 100%;
+  }
+  .about .container .text .card .container .row .left .circle img {
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 100px;
+    height: 100px;
+  }
+  .about .container .text .card .container .row .right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 2rem;
+  }
+  .about .container .text .card .container .row .right .rectangle {
+    background: white;
+    width: 30vw;
+    height: 7%;
+  }
+  .about .container .text .card .container .row .right .rectangle .small-rectangle {
+    height: 100%;
+    width: 24vw;
+    background: gray;
+  }
+  .about .container .text .card .container .row .right .rectangle {
+    background: white;
+    width: 30vw;
+    height: 7%;
+  }
+  .about .container .text .card .container .row .right .rectangle .next-rectangle {
+    height: 100%;
+    width: 20vw;
+    background: gray;
+  }
+  .about .container .text .card .container .row .right .rectangle {
+    background: white;
+    width: 30vw;
+    height: 7%;
+  }
+  .about .container .text .card .container .row .right .rectangle .min-rectangle {
+    height: 100%;
+    width: 23vw;
+    background: gray;
+  }
+  .about .container .text .card .container .row .right .rectangle {
+    background: white;
+    width: 30vw;
+    height: 7%;
+  }
+  .about .container .text .card .container .row .right .rectangle .last-rectangle {
+    height: 100%;
+    width: 25vw;
+    background: gray;
+  }
+  .services {
+    margin: 5rem;
+  }
+  .services .container .row .left .large-text h3 {
+    font-weight: bolder;
+    width: 30%;
+  }
+  .services .container .row .left .med-text p {
+    width: 80%;
+  }
+  .services .container .row .left .circle-container {
+    padding-top: 5rem;
+  }
+  .services .container .row .left .circle-container .circle-one {
+    background: black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .services .container .row .left .circle-container .circle-one .circle-two {
+    background: white;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .services .container .row .left .circle-container .circle-one .circle-two img {
+    width: 50px;
+    height: 50px;
+    rotate: -10deg;
+  }
+  .services .container .row .right .line {
+    background: black;
+    height: 1%;
+  }
+  .services .container .row .right button {
+    width: 7rem;
+    background: black;
+    color: white;
+    border: 5px solid white;
+  }
+  .services .container .row .right .line {
+    margin-top: 10px;
+  }
+  .projects {
+    margin-top: 8rem;
+  }
+  .projects .container .row .left h3 {
+    font-weight: bolder;
+  }
+  .projects .container .row .left .line {
+    background: black;
+    height: 1%;
+    margin-top: 8rem;
+  }
+  .projects .container .row .left h4 {
+    font-style: italic;
+    font-weight: 200;
+    padding-top: 1rem;
+  }
+  .projects .container .row .left p {
+    font-weight: 200;
+  }
+  .projects .container .row .left button {
+    background: black;
+    color: white;
+    border: none;
+  }
+  .projects .container .row .center .line {
+    background: black;
+    height: 1%;
+    margin-top: 5rem;
+  }
+  .projects .container .row .center h4 {
+    font-style: italic;
+    font-weight: 200;
+    padding-top: 1rem;
+  }
+  .projects .container .row .center p {
+    font-weight: 200;
+  }
+  .projects .container .row .center button {
+    background: black;
+    color: white;
+    border: none;
+  }
+  .projects .container .row .end .line {
+    background: black;
+    height: 1%;
+  }
+  .projects .container .row .end h4 {
+    font-style: italic;
+    font-weight: 200;
+    padding-top: 1rem;
+  }
+  .projects .container .row .end p {
+    font-weight: 200;
+  }
+  .projects .container .row .end button {
+    background: black;
+    color: white;
+    border: none;
+  }
+  .contact {
+    margin: 10rem;
+  }
+  .contact .container h3 {
+    font-weight: bold;
+  }
+  .contact .container h3 span {
+    text-decoration: underline;
+  }
+  .contact .container .card {
+    background: black;
+    padding: 2rem;
+    width: 70%;
+    margin-left: 10rem;
+  }
+  .contact .container .card .feature {
+    display: flex;
+    justify-content: center;
+  }
+  .contact .container .card .feature .julie-pic {
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 100px;
+    height: 100px;
+  }
+  .contact .container .card .feature img {
+    height: 50px;
+    width: 50px;
+  }
+  .contact .container .card .feature p {
+    color: white;
+  }
+  .contact .container .card .feature .calling {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .contact .container .card .book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .container .card .book img {
+    width: 30px;
+    height: 30px;
+  }
+  .contact .container .card .container {
+    margin: 2rem;
+  }
+  .contact .container .card .container .row .left img {
+    width: 20vw;
+    height: 30vh;
+  }
+  .contact .container .card .right form {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  .contact .container .card .right label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+  }
+  .contact .container .card .right input[type=text],
+  .contact .container .card .right input[type=email] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  .contact .container .card .right textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+  }
+  .contact .container .card .right button {
+    background-color: gray;
+    padding: 5px;
+    color: white;
+  }
+  .footer {
+    padding: 2rem;
+    background: black;
+    height: 20vh;
+  }
+  .footer .container .finale {
+    display: flex;
+    justify-content: baseline;
+    align-items: last baseline;
+    text-align: end;
+  }
+  .footer .container .finale p {
+    color: white;
+  }
+  .footer .container .finale img {
+    height: 50px;
+    width: 50px;
+  }
+  .footer .container .finale .gram {
+    padding-left: 30rem;
+    gap: 5px;
   }
 }
 /* Extra large devices (large desktops, 1200px and up) */

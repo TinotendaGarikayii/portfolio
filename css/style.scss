@@ -52,15 +52,27 @@ table {
 //phone styles
 *{
     overflow-x: hidden;
+
+    a{text-decoration: none;}
 }
 .pc-nav{
     display: none;
-    .dark{
-        height: 40px;
-        width: 40px;
-        margin-left: 100px;
+    
+}
+
+.active{
+    .pc-nav{
+        display: block !important;
+        ul{
+          gap: 2rem;
+        }
+    }
+    .mode{
+        height: 0;
+        width: 0;
     }
 }
+
 .mobile-nav{
     display: block;
     display: flex;
@@ -94,7 +106,6 @@ table {
                 display: flex;
                 flex-direction: column;
                 gap: 3rem;
-                padding-top: 5rem;
                 h2{
                     width: 100%;
                     font-weight: bolder;
@@ -103,9 +114,8 @@ table {
                     font-family: Georgia, 'Times New Roman', Times, serif;
                     width: 100%;
                 }
-                .btn{
-                    height: fit-content;
-                    width: fit-content;
+                
+                    
 
                     button{
                         background: black;
@@ -114,17 +124,499 @@ table {
                         padding: 0;
                         margin: 0;
                         width: 7rem;
+                        a{
+                            text-decoration: none;
+                            color: white;
+                        }
                     }
-                }
+                
             }
 
             .right{
                 .image{
                     margin-top: 20px;
                 }
+                .icons{
+                    display: flex;
+                    img{
+                        width: 120px;
+                        height: 120px;
+                    }
+                }
             }
         }
     }
+}
+
+
+
+.about{
+    margin: 1rem;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .text{
+            .small-text{
+                font-weight: 300;
+            }
+            .min-text{
+                width: 100%; 
+            }
+            .card{
+                background: black;
+                height: 100%;
+                width: 100%;
+                
+              .container{
+                .row{
+                    color: #fff;
+                    .left{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2rem;
+                        padding-top: 2rem;
+                        .circle{
+                            img{
+                                border-radius: 50%;
+                                border: 2px solid white;
+                                width: 100px;
+                                height: 100px;
+                            }
+                        }
+                        font-size: smaller;
+                        font-weight: 200;
+                        width: 100%;
+                    }
+
+                    .right{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        padding-top: 2rem;
+                        .rectangle{
+                            background: white;
+                            width: 30vw;
+                            height: 7%;
+                            .small-rectangle{
+                                height: 100%;
+                                width: 24vw;
+                                background:gray;
+                            }
+                        }
+
+                        .rectangle{
+                            background: white;
+                            width: 30vw;
+                            height: 7%;
+                            .next-rectangle{
+                                height: 100%;
+                                width: 20vw;
+                                background:gray;
+                            }
+                    }
+
+                    .rectangle{
+                        background: white;
+                        width: 30vw;
+                        height: 7%;
+                        .min-rectangle{
+                            height: 100%;
+                            width: 23vw;
+                            background:gray;
+                        }
+                }
+
+                .rectangle{
+                    background: white;
+                    width: 30vw;
+                    height: 7%;
+                    .last-rectangle{
+                        height: 100%;
+                        width: 25vw;
+                        background:gray;
+                    }
+            }
+                  }
+              }
+            }
+        }
+        
+    }
+}
+}
+
+.services{
+    margin: 1rem;
+    .container{
+        .row{
+            .left{
+             .large-text{
+                h3{
+                    font-weight: bolder;
+                }
+             }  
+             .med-text{
+                p{
+                    width: 100%;
+                }
+             } 
+             .circle-container{
+                padding-top: 5rem;
+                .circle-one{
+                    background: black;
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    .circle-two{
+                        background: white;
+                        width: 80%;
+                        height:80%;
+                        border-radius: 50%;
+                        display: flex;text-align: center;justify-content: center;
+                        text-align: center;
+                        align-items: center;
+                        img{
+                            width: 50px;
+                            height: 50px;
+                            rotate: -10deg;
+                        }
+                    }
+                 }
+             }
+            }
+
+            .right{
+                .line{
+                    background: black;
+                    height: 1%;
+                }
+                button{
+                    width: 7rem;
+                    background: black;
+                    color: white;
+                    border: 5px solid white;
+                }
+
+                .line{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+.projects{
+    margin-top: 2rem;
+    .container{
+        .row{
+            .left{
+               h3{
+                font-weight: bolder;
+               } 
+               .line{
+                background: black;
+                height: 1%;
+                margin-top: 2rem;
+            }
+            h4{
+                font-style:italic;
+                font-weight: 200;
+                padding-top: 1rem;
+            }
+            p{
+                font-weight: 200;
+            }
+            button{
+                background: black;
+                color: white;
+                border: none;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+            }
+
+            .center{
+                .line{
+                    background: black;
+                    height: 1%;
+                    margin-top: 2rem;
+                }
+                h4{
+                    font-style:italic;
+                    font-weight: 200;
+                    padding-top: 1rem;
+                }
+                p{
+                    font-weight: 200;
+                }
+                button{
+                    background: black;
+                    color: white;
+                    border: none;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+
+            .end{
+                .line{
+                    background: black;
+                    height: 1%;
+                    margin-top: 1rem;
+                }
+                h4{
+                    font-style:italic;
+                    font-weight: 200;
+                    padding-top: 1rem;
+                }
+                p{
+                    font-weight: 200;
+                }
+                button{
+                    background: black;
+                    color: white;
+                    border: none;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contact{
+    margin: 2rem;
+     .container{
+        h3{
+            font-weight: bold;
+            span{
+                text-decoration: underline;
+            }
+        }
+        .card{
+            background: black;
+            padding: 2rem;
+            width: 100%;
+           .feature{
+            display: flex;
+            justify-content: center;
+            .julie-pic{
+                border-radius: 50%;
+                border: 2px solid white;
+                width: 100px;
+                
+            }
+            img{
+                height: 40px;
+                width: 40px;
+                
+            }
+            p{
+                color: white;
+                font-size: smaller;
+            }
+            .calling{
+                flex-direction: column;
+                gap: 0px;
+            }
+           }
+           .book{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            img{
+                width: 30px;
+                height: 30px;
+            }
+           }
+
+           .container{
+            margin: 2rem;
+            .row{
+                .left{
+                    img{
+                        width: 40vw;
+                        height: 20vh;
+                    }
+                }
+            }
+           }
+
+           .right{
+            form{
+                border: 1px solid #ddd;
+                padding: 1rem;
+                border-radius: 5px;
+            }
+            
+            label{
+                display: block;
+                margin-bottom: 5px;
+                color: white;
+            }
+            
+            input[ type="text"],
+            input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc
+            }
+            
+            textarea{
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 2px;
+            }
+            
+            button{
+                background-color: gray;
+                padding: 5px;
+                color: white;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+           }
+        }
+}
+}
+
+.footer{
+    padding: 2rem;
+    background: black;
+    height: 20vh;
+    .container{
+          .finale{
+            display: flex;
+            justify-content: baseline;
+            align-items: last baseline;
+            text-align: end;
+            p{
+                color: white;
+                gap: 5px;
+                padding-right: 3rem;
+            }
+            img{
+                height: 50px;
+                width: 50px;
+            }
+            .gram{
+                display: flex;
+                gap: 5px;
+            }
+          }
+    }
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {  
+       
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) { 
+}
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .mobile-nav{
+        display: none;
+       }
+       .pc-nav{
+        display: block;
+        
+        .flex-container{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        img{
+            height: 40px;
+            width: 40px;
+        }
+        ul{
+            display: flex;
+            color: black;
+            gap: 50px;
+            text-decoration: none;
+            li{
+                color: black;
+                font-size: 20px;
+               a{
+                text-decoration: none;
+               }     
+            }
+            
+        }
+        }
+       }
+
+       .banner{
+        .container{
+            .row{
+                .left{
+                    padding-top: 5rem;
+                    h2{
+                        width: 100%;
+                        font-weight: bolder;
+                    }
+                    h3{
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        width: 100%;
+                    }
+                    .btn{
+                        padding-left: 0.1rem;
+                        button{
+                            background: black;
+                            color: white;
+                            border: none;
+                        }
+                    }
+                }
+    
+                .right{
+                    .image{
+                        margin-top: 20px;
+                }
+                .icons{
+                  display: flex;
+                }
+            }
+        }
+    }
+
 }
 
 .about{
@@ -149,9 +641,9 @@ table {
                     color: #fff;
                     .left{
                         display: flex;
-                flex-direction: column;
-                gap: 2rem;
-                padding-top: 2rem;
+                        flex-direction: column;
+                        gap: 2rem;
+                        padding-top: 2rem;
                         .circle{
                             img{
                                 border-radius: 50%;
@@ -234,7 +726,7 @@ table {
              .large-text{
                 h3{
                     font-weight: bolder;
-                width: 30%;
+                    width: 30%;
                 }
              }  
              .med-text{
@@ -290,100 +782,199 @@ table {
     }
 }
 
-/*
-####################################################
-M E D I A  Q U E R I E S
-####################################################
-*/
-
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::::
-Bootstrap 4 breakpoints
-*/
-
-/* 
-Extra small devices (portrait phones, less than 576px) 
-No media query since this is the default in Bootstrap because it is "mobile first"
-*/
-
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 568px) {  
-       
-}
-
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) { 
-}
-
-
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    .mobile-nav{
-        display: none;
-       }
-       .pc-nav{
-        display: block;
-        
-        .flex-container{
-            margin-top: 10px;
-            display: flex;
-        justify-content: space-between;
-        align-items: center;
-        img{
-            height: 40px;
-            width: 40px;
-        }
-        ul{
-            display: flex;
-            color: black;
-            gap: 50px;
-            li{
-                color: black;
-                font-size: 20px;
-                    
+.projects{
+    margin-top: 8rem;
+    .container{
+        .row{
+            .left{
+               h3{
+                font-weight: bolder;
+               } 
+               .line{
+                background: black;
+                height: 1%;
+                margin-top: 8rem;
             }
-            
-        }
-        }
-       }
+            h4{
+                font-style:italic;
+                font-weight: 200;
+                padding-top: 1rem;
+            }
+            p{
+                font-weight: 200;
+            }
+            button{
+                background: black;
+                color: white;
+                border: none;
+            }
+            }
 
-       .banner{
-        .container{
-            .row{
-                .left{
-                    padding-top: 5rem;
-                    h2{
-                        width: 100%;
-                        font-weight: bolder;
-                    }
-                    h3{
-                        font-family: Georgia, 'Times New Roman', Times, serif;
-                        width: 100%;
-                    }
-                    .btn{
-                        padding-left: 0.1rem;
-                        button{
-                            background: black;
-                            color: white;
-                            border: none;
-                        }
-                    }
+            .center{
+                .line{
+                    background: black;
+                    height: 1%;
+                    margin-top: 5rem;
                 }
-    
-                .right{
-                    .image{
-                        margin-top: 20px;
+                h4{
+                    font-style:italic;
+                    font-weight: 200;
+                    padding-top: 1rem;
                 }
-                .icons{
-                  display: flex;
+                p{
+                    font-weight: 200;
+                }
+                button{
+                    background: black;
+                    color: white;
+                    border: none;
+                }
+            }
+
+            .end{
+                .line{
+                    background: black;
+                    height: 1%;
+                    
+                }
+                h4{
+                    font-style:italic;
+                    font-weight: 200;
+                    padding-top: 1rem;
+                }
+                p{
+                    font-weight: 200;
+                }
+                button{
+                    background: black;
+                    color: white;
+                    border: none;
                 }
             }
         }
     }
-
 }
+
+.contact{
+    margin: 10rem;
+     .container{
+        h3{
+            font-weight: bold;
+            span{
+                text-decoration: underline;
+            }
+        }
+        .card{
+            background: black;
+            padding: 2rem;
+            width: 70%;
+            margin-left: 10rem;
+           .feature{
+            display: flex;
+            justify-content: center;
+            .julie-pic{
+                border-radius: 50%;
+                border: 2px solid white;
+                width: 100px;
+                height: 100px;
+            }
+            img{
+                height: 50px;
+                width: 50px;
+                
+            }
+            p{
+                color: white;
+            }
+            .calling{
+                flex-direction: column;
+                gap: 0px;
+            }
+           }
+           .book{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            img{
+                width: 30px;
+            height: 30px;
+            }
+           }
+
+           .container{
+            margin: 2rem;
+            .row{
+                .left{
+                    img{
+                        width: 20vw;
+                        height: 30vh;
+                    }
+                }
+            }
+           }
+
+           .right{
+            form{
+                border: 1px solid #ddd;
+                padding: 1rem;
+                border-radius: 5px;
+            }
+            
+            label{
+                display: block;
+                margin-bottom: 5px;
+                color: white;
+            }
+            
+            input[ type="text"],
+            input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc
+            }
+            
+            textarea{
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 2px;
+            }
+            
+            button{
+                background-color: gray;
+                padding: 5px;
+                color: white;
+            }
+           }
+        }
+}
+}
+
+.footer{
+    padding: 2rem;
+    background: black;
+    height: 20vh;
+    .container{
+          .finale{
+            display: flex;
+            justify-content: baseline;
+            align-items: last baseline;
+            text-align: end;
+            p{
+                color: white;
+            }
+            img{
+                height: 50px;
+                width: 50px;
+            }
+            .gram{
+                padding-left: 30rem;
+                gap: 5px;
+            }
+          }
+    }
+}
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

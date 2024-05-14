@@ -6,31 +6,36 @@
     <title>Document</title>
     <link rel="stylesheet" href="css\style.css">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    
 </head>
 <body>
     
     <nav class="mobile-nav">
-        <img src="img\icon.png" alt="">
-        <div class="hamburger">
+        <img src="img\icon.png" alt="" class="mode">
+        <div class="hamburger" id="hamburger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
     </nav>
 
-        
-            <nav class="pc-nav">
+    <section class="about" id="aboutSection">
+
+    </section>
+            <nav class="pc-nav" id="pc-nav">
                 <div class="container">
                     <div class="flex-container">
                     <img src="img\icon.png" alt="logo">
                     <ul>
-                        <li>Home</li>
+
+                        <li><a href="Home"></a>Home</li>
+                        <li><a href="About"></a>About</li>
+                        <li><a href="Services"></a>Services</li>
+                        <li><a href="sprojects"></a>Projects</li>
+                        <li><a href="contact"></a>Contact</li>
+                        <li></li>
                         
-                        <li>About</li>
-                    
-                        <li>Services</li>
-                        <li>Projects</li>
-                        <li>Contact</li>
+                        
                     </ul>
                     
                 </div>
@@ -39,16 +44,14 @@
             </nav>
         
     
-
+     
     <section class="banner">
         <div class="container">
            <div class="row">
             <div class="col-md left">
               <h2>Tinotenda Garikayi</h2>
               <h3>UI/UX Designer | Front-end Developer</h3>
-              <div class="btn">
-                <button>Download CV</button>
-              </div>
+                <button download class="cv"><a download class="cv" href="./img/My CV.pdf">Download CV</a></button>
             </div>
 
             <div class="col-md right">
@@ -66,7 +69,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             
                 <div class="text">
@@ -132,7 +135,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="row">
                    <div class="col-md-7 left">
@@ -172,7 +175,7 @@
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 left">
@@ -183,15 +186,85 @@
                     <button><a href="https://www.figma.com/proto/u6USI3dNGX96WF0P38V41g/Real-Estate-(Tino)?page-id=7%3A258&type=design&node-id=32-1110&viewport=-84%2C-113%2C0.23&t=pzvSpdaaI5L7dJlr-1&scaling=min-zoom&starting-point-node-id=7%3A263">Open Project</a></button>
                 </div>
 
-                <div class="col-md-4 center">
-                    <h3>Latest Projects</h3>
+               <div class="col-md-4 center">
+                <div class="line"></div>
+                <h4>Daas Africa Landing Page</h4>
+                <p>Web/Landing Page</p>
+                <button><a href="https://www.figma.com/proto/lfKBA5KMlILjFfEpKFHqFV/tino-Daas?page-id=0%3A1&node-id=20-2670&viewport=365%2C-499%2C0.08&t=NwYlH3UTZeSWonQy-1&scaling=min-zoom&starting-point-node-id=3%3A3">Open Project</a></button>
+               </div>
+
+                <div class="col-md-4 end">
                     <div class="line"></div>
-                    <h4>Real Estate Landing Page</h4>
-                    <p>Web/Landing Page</p>
-                    <button><a href="https://www.figma.com/proto/u6USI3dNGX96WF0P38V41g/Real-Estate-(Tino)?page-id=7%3A258&type=design&node-id=32-1110&viewport=-84%2C-113%2C0.23&t=pzvSpdaaI5L7dJlr-1&scaling=min-zoom&starting-point-node-id=7%3A263">Open Project</a></button>
+                    <h4>Front-end Development</h4>
+                    <p>Landing Pages</p>
+                    <button><a href="https://github.com/TinotendaGarikayii/meikles">Open Project</a></button>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="contact" id="contact">
+       <div class="container">
+        <h3>CONTACT <span>ME</span></h3>
+        <div class="card">
+            <div class="feature">
+                <img src="img\julie.png" alt="" class="julie-pic">
+            <img src="img\call.png" alt="">
+           <div class="calling">
+            <p>+263 788 774 927</p>
+            <p>+263 716 678 162</p>
+           </div>
+            <img src="img\email.png" alt="">
+            <p>julietzayn0@gmail.com</p>
+            </div>
+            <div class="book">
+            <img src="img\facebook.png" alt="">
+            <img src="img\instagram.png" alt="">
+            <img src="img\linkedin.png" alt="">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md left">
+                  <img src="img\map.jpg" alt="">
+                </div>
+
+                <div class="col-md right">
+                    <form action="form-handler" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text"id="name" name="name" placeholder="Your name">
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="text"id="email" name="email"placeholder="Your email">
+                        <br>
+                        <label for="message"> Message:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+                        <br>
+                        <button type="submit" ><a submit="message" href="DONE">Send Message</a></button>
+                    
+                    </form>
+                </div>
+            </div>
+           </div>
+        </div>
+       </div>
+
+    
+    </section>
+
+    <div class="footer">
+       <div class="container">
+        <div class="finale">
+            <p>tinotenda.2024. All rights reserved</p>
+         <div class="gram">
+            <img src="img\facebook.png" alt="">
+            <img src="img\instagram.png" alt="">
+            <img src="img\linkedin.png" alt="">
+         </div>
+        </div>
+       </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
