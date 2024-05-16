@@ -52,9 +52,10 @@ table {
 //phone styles
 *{
     overflow-x: hidden;
-
+    // margin-top: 0 !important;
     a{text-decoration: none;}
 }
+
 .pc-nav{
     display: none;
     
@@ -121,9 +122,9 @@ table {
                         background: black;
                         color: white;
                         border: none;
-                        padding: 0;
+                        padding: 20px;
                         margin: 0;
-                        width: 7rem;
+                        width: 9rem;
                         a{
                             text-decoration: none;
                             color: white;
@@ -241,6 +242,16 @@ table {
                   }
               }
             }
+            .doc{
+                display: flex;
+                justify-content: center;
+                button{
+                    background-color: black;
+                    color: white;
+                    width: 7rem;
+                    border: 2px solid white;
+                }
+            }
         }
         
     }
@@ -263,7 +274,7 @@ table {
                 }
              } 
              .circle-container{
-                padding-top: 5rem;
+                padding-top: 3rem;
                 .circle-one{
                     background: black;
                     border-radius: 50%;
@@ -300,6 +311,9 @@ table {
                     background: black;
                     color: white;
                     border: 5px solid white;
+                    a{
+                        color: white;
+                    }
                 }
 
                 .line{
@@ -396,7 +410,7 @@ table {
 }
 
 .contact{
-    margin: 2rem;
+    margin-top: 2rem;
      .container{
         h3{
             font-weight: bold;
@@ -407,6 +421,7 @@ table {
         .card{
             background: black;
             padding: 2rem;
+            height: 100%;
             width: 100%;
            .feature{
             display: flex;
@@ -414,7 +429,7 @@ table {
             .julie-pic{
                 border-radius: 50%;
                 border: 2px solid white;
-                width: 100px;
+                width: 60px;
                 
             }
             img{
@@ -424,12 +439,9 @@ table {
             }
             p{
                 color: white;
-                font-size: smaller;
+                
             }
-            .calling{
-                flex-direction: column;
-                gap: 0px;
-            }
+         
            }
            .book{
             display: flex;
@@ -493,11 +505,24 @@ table {
         }
 }
 }
+.calling{
+    flex-direction: column;
+    .mail{
+        display: flex;
+    }
+    .ing{
+        display: flex;
+    }
+    p{
+        width: 100% !important;
+    }
+}
 
 .footer{
     padding: 2rem;
     background: black;
     height: 20vh;
+    margin-top: 2rem;
     .container{
           .finale{
             display: flex;
@@ -558,7 +583,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         display: block;
         
         .flex-container{
-            margin-top: 10px;
+            // margin-top: 5px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -596,14 +621,13 @@ No media query since this is the default in Bootstrap because it is "mobile firs
                         font-family: Georgia, 'Times New Roman', Times, serif;
                         width: 100%;
                     }
-                    .btn{
-                        padding-left: 0.1rem;
+                    
                         button{
                             background: black;
                             color: white;
                             border: none;
                         }
-                    }
+                    
                 }
     
                 .right{
@@ -620,7 +644,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 }
 
 .about{
-    margin: 5rem;
+
     .container{
         display: flex;
         align-items: center;

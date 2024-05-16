@@ -117,9 +117,9 @@ table {
   background: black;
   color: white;
   border: none;
-  padding: 0;
+  padding: 20px;
   margin: 0;
-  width: 7rem;
+  width: 9rem;
 }
 .banner .container .row .left button a {
   text-decoration: none;
@@ -220,6 +220,16 @@ table {
   width: 25vw;
   background: gray;
 }
+.about .container .text .card .doc {
+  display: flex;
+  justify-content: center;
+}
+.about .container .text .card .doc button {
+  background-color: black;
+  color: white;
+  width: 7rem;
+  border: 2px solid white;
+}
 
 .services {
   margin: 1rem;
@@ -231,7 +241,7 @@ table {
   width: 100%;
 }
 .services .container .row .left .circle-container {
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 .services .container .row .left .circle-container .circle-one {
   background: black;
@@ -267,6 +277,9 @@ table {
   background: black;
   color: white;
   border: 5px solid white;
+}
+.services .container .row .right button a {
+  color: white;
 }
 .services .container .row .right .line {
   margin-top: 10px;
@@ -346,7 +359,7 @@ table {
 }
 
 .contact {
-  margin: 2rem;
+  margin-top: 2rem;
 }
 .contact .container h3 {
   font-weight: bold;
@@ -357,6 +370,7 @@ table {
 .contact .container .card {
   background: black;
   padding: 2rem;
+  height: 100%;
   width: 100%;
 }
 .contact .container .card .feature {
@@ -366,7 +380,7 @@ table {
 .contact .container .card .feature .julie-pic {
   border-radius: 50%;
   border: 2px solid white;
-  width: 100px;
+  width: 60px;
 }
 .contact .container .card .feature img {
   height: 40px;
@@ -374,11 +388,6 @@ table {
 }
 .contact .container .card .feature p {
   color: white;
-  font-size: smaller;
-}
-.contact .container .card .feature .calling {
-  flex-direction: column;
-  gap: 0px;
 }
 .contact .container .card .book {
   display: flex;
@@ -428,10 +437,24 @@ table {
   color: white;
 }
 
+.calling {
+  flex-direction: column;
+}
+.calling .mail {
+  display: flex;
+}
+.calling .ing {
+  display: flex;
+}
+.calling p {
+  width: 100% !important;
+}
+
 .footer {
   padding: 2rem;
   background: black;
   height: 20vh;
+  margin-top: 2rem;
 }
 .footer .container .finale {
   display: flex;
@@ -477,7 +500,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     display: block;
   }
   .pc-nav .flex-container {
-    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -510,10 +532,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     font-family: Georgia, "Times New Roman", Times, serif;
     width: 100%;
   }
-  .banner .container .row .left .btn {
-    padding-left: 0.1rem;
-  }
-  .banner .container .row .left .btn button {
+  .banner .container .row .left button {
     background: black;
     color: white;
     border: none;
@@ -523,9 +542,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
   .banner .container .row .right .icons {
     display: flex;
-  }
-  .about {
-    margin: 5rem;
   }
   .about .container {
     display: flex;
